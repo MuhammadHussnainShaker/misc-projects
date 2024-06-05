@@ -8,7 +8,34 @@
     <script src="index.js"></script>
 </head>
 <body>
-    <p>I am Paragraph</p>
-    <section id="main-container"></section>
+    <section id="main-container">
+        <h1>LOCKeT PASSWORD GENERATOR</h1>
+        <div class="no-of-chars flex-space-bw">
+            <p>Enter number of chracters</p>
+            <input type="text" class="char-input" placeholder="Ex. 16" />
+        </div>
+        <div class="lowercase flex-space-bw">
+            <p>Include lowercase letters</p>
+            <input type="checkbox" name="lowercase" id="lowercase">
+        </div>
+        <div class="uppercase flex-space-bw">
+            <p>Include uppercase letters</p>
+            <input type="checkbox" name="uppercase" id="uppercase">
+        </div>
+        <div class="symbols flex-space-bw">
+            <p>Include symbols</p>
+            <input type="checkbox" name="symbols" id="symbols">
+        </div>
+        <div class="numbers flex-space-bw">
+            <p>Include numbers</p>
+            <input type="checkbox" name="numbers" id="numbers">
+        </div>
+        <div class="submit-button flex-centered">
+            <button type="submit">Generate Password</button>
+        </div>
+        <div class="result flex-centered">
+            <input type="text">
+        </div>
+    </section>
 </body>
 </html>
