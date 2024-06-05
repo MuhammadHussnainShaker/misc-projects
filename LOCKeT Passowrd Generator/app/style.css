@@ -1,0 +1,10 @@
+body {
+    background-color: #1E293B;
+}
+
+#main-container {
+    display: inline-flex;
+    background-color: #334155;
+    width: 100px;
+    height: 100px;
+}
