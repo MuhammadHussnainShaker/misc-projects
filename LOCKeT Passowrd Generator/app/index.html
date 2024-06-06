@@ -10,10 +10,16 @@
 <body>
     <section id="main-container">
         <h1>LOCKeT PASSWORD GENERATOR</h1>
-        <div class="no-of-chars flex-space-bw">
+        <form action="" method="post">
+            <label for="char-input" class="lowercase flex-space-bw char-input-label">
+            <p>Enter number of chracters (8-16):</p>
+            <input type="number" class="char-input" id="char-input" name="char-input" min="8" max="16" value="12"/>
+            </label>
+        </form>
+        <!-- <div class="no-of-chars flex-space-bw">
             <p>Enter number of chracters</p>
             <input type="text" class="char-input" placeholder="Ex. 16" />
-        </div>
+        </div> -->
         <div class="lowercase flex-space-bw">
             <p>Include lowercase letters</p>
             <input type="radio" name="lowercase" class="checkbox" id="lowercase">

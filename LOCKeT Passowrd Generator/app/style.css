@@ -42,27 +42,22 @@ p {
     padding-right: 1.75rem;
     display: flex;
     justify-content: space-between;
-}
-
-.no-of-chars {
     align-items: center;
 }
 
 .char-input {
     background-color: #475569;
+    width: 60px;
+    height: 30px;
     border: 0px;
     border-radius: 40px;
-    width: 150px;
-    height: 30px;
-}
-
-.char-input::placeholder {
     font-family: 'OpenSans-Regular', sans-serif;
     font-size: 1rem;
     font-weight: 50;
     color: #FFFFFF;
-    opacity: 0.33;
-    padding-left: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    text-indent: 0.7em
 }
 
 .checkbox {
