@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url(/techadeptly-contact-us/fonts/Roboto-Regular.ttf) format('truetype');
+    font-weight: normal;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title {
+    text-align: center;
+    font-size: 2em;
+    margin: .67em 0;
+    font-family: 'Roboto-Regular';
+    /* font-family: var(--block-title-family); 
+    display: var(--page-title-display);
+    */
+    font-weight: 900;
+    color: #404040;
+    line-height: 1.5;
+    margin-top: 0;
+}
+
+.header-desc {
+    margin-bottom: 1.5em;
+    text-align: center;
+    color: #232323;
+    font-family: 'Roboto-Regular';
+}
+
+.form-body {
+    display: flex;
+    justify-content: center;
+}
+
+.form-sidebar-section {
+    background-color: #041E39;
+    width: 350px;
+    height: 537px;
+    padding: 30px;
+}
+
+.form-sidebar-title {
+    font-family: 'Roboto-Regular';
+    color: #2f1c6a;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.form-sidebar-desc {
+    font-family: 'Roboto-Regular';
+    color: #ffffff;
+    margin-bottom: 1.5em;
+}
+
+.social-icon {
+    padding-right: 5px;
+}
+
+.form-section {
+    display: flex;
+    padding-top: 50px;
+    padding-left: 25px;
+}
+
+
+.form-inputs {
+    width: 70vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.input-container {
+    width: 50%;
+}
+
+.label {
+    display: block;
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    line-height: 19px;
+    color: #000000d9;
+    font-weight: 700;
+    font-family: 'Roboto-Regular';
+}
+
+.label-span {
+    color: #d63637;
+}
+
+.input {
+    display: block;
+    border: 1px solid #673DE6;
+    padding-left: 14px;
+    padding-right: 14px;
+    font-size: 16px;
+    line-height: 100%;
+    width: 50%;
+    font-family: 'Roboto-Regular';
+    font-weight: 400;
+    max-width: 100%;
+    height: 43px;
+    border-radius: 3px;
+}
+
+.msg-textarea {
+    width: 100%;
+    height: 200px;
+}
+
+.submit-buttons {
+    height: 41px;
+    border-style: none;
+    border-radius: 3px;
+    background-color: rgb(103 61 230);
+    color: #ffffff;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: 'Roboto-Regular';
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 100%;
+    cursor: pointer;
+    margin-top: 10px;
+}
