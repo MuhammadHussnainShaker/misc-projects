@@ -105,3 +105,16 @@ p {
     width: 182px;
     margin-bottom: 16px;
 }
+
+.result-field {
+    font-family: 'OpenSans-Regular', sans-serif;
+    font-size: 1rem;
+    font-weight: 50;
+    color: #FFFFFF;
+    background-color: #475569;
+    border-radius: 20px;
+    border: hidden;
+    height: 30px;
+    width: 370px;
+    outline: none;
+}
