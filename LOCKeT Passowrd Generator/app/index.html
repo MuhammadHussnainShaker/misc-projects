@@ -15,30 +15,30 @@
             <p>Enter number of chracters (8-16):</p>
             <input type="number" class="char-input" id="char-input" name="char-input" min="8" max="16" value="" placeholder="Ex. 16"/>
             </label>
+            <label for="lowercase" class="lowercase flex-space-bw">
+                <p>Include lowercase letters</p>
+                <input type="checkbox" name="lowercase" class="checkbox" id="lowercase">
+            </label>
+            <label for="uppercase" class="uppercase flex-space-bw">
+                <p>Include uppercase letters</p>
+                <input type="checkbox" name="uppercase" class="checkbox" id="uppercase">
+            </label>
+            <label for="symbols" class="symbols flex-space-bw">
+                <p>Include symbols</p>
+                <input type="checkbox" name="symbols" class="checkbox" id="symbols">
+            </label>
+            <label for="numbers" class="numbers flex-space-bw">
+                <p>Include numbers</p>
+                <input type="checkbox" name="numbers" class="checkbox" id="numbers">
+            </label>
+            <label for="submit-button" class="submit-button flex-centered">
+                <button id="submit-button" class="submitform-button" type="submit">Generate Password</button>
+            </label>
         </form>
         <!-- <div class="no-of-chars flex-space-bw">
             <p>Enter number of chracters</p>
             <input type="text" class="char-input" placeholder="Ex. 16" />
         </div> -->
-        <div class="lowercase flex-space-bw">
-            <p>Include lowercase letters</p>
-            <input type="radio" name="lowercase" class="checkbox" id="lowercase">
-        </div>
-        <div class="uppercase flex-space-bw">
-            <p>Include uppercase letters</p>
-            <input type="radio" name="uppercase" class="checkbox" id="uppercase">
-        </div>
-        <div class="symbols flex-space-bw">
-            <p>Include symbols</p>
-            <input type="radio" name="symbols" class="checkbox" id="symbols">
-        </div>
-        <div class="numbers flex-space-bw">
-            <p>Include numbers</p>
-            <input type="radio" name="numbers" class="checkbox" id="numbers">
-        </div>
-        <div class="submit-button flex-centered">
-            <button type="submit">Generate Password</button>
-        </div>
         <div class="result flex-centered">
             <input type="text">
         </div>
