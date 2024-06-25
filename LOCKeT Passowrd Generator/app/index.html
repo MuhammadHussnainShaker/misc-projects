@@ -31,13 +31,13 @@
                 <p>Include numbers</p>
                 <input type="checkbox" name="numbers" class="checkbox" id="numbers">
             </label>
-            <label for="submit-button" class="submit-button flex-centered">
-                <button id="submit-button" class="submitform-button" type="submit">Generate Password</button>
-            </label>
+            <div class="submit-button flex-centered">
+            <button id="submit-button" class="submitform-button" type="submit">Generate Password</button>
+            </div>
         </form>
         <div class="result flex-centered">
-            <input type="text" class="result-field">
-            <img src="./assets/clipboard-icon.png" alt="clipboard-icon" class="clipboard-icon">
+            <input type="text" class="result-field" readonly>
+            <img src="./assets/clipboard-icon.png" alt="clipboard-icon" class="clipboard-icon" title="Copy to clipboard">
         </div>
     </section>
 </body>

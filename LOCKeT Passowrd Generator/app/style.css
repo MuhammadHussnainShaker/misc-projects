@@ -107,8 +107,13 @@ p {
   margin-bottom: 16px;
 }
 
+.submitform-button:hover {
+  background-color: #192231;
+  cursor: pointer;
+}
+
 .result {
-    position: relative;
+  position: relative;
 }
 
 .result-field {
@@ -123,6 +128,8 @@ p {
   width: 335px;
   outline: none;
   padding-right: 35px;
+  cursor: default;
+  pointer-events: none;
 }
 
 .clipboard-icon {
@@ -133,4 +140,12 @@ p {
   right: 5px;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.clipboard-icon:hover {
+  cursor: pointer;
+  background-color: #192231;
+  background-color: #192231;
+  border-radius: 25px;
+  padding: 5px;
 }
