@@ -4,16 +4,18 @@ document.addEventListener("DOMContentLoaded", function () {
   form.addEventListener("submit", handleSubmit)
 
   function handleSubmit(event) {
+
+      const lowercaseLetters = "abcdefghijklmnopqrstuvwxyz"
+      const uppercaseLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+      const symbols = "!@#$%^&*()-+=_[]{}|;:,./"
+      const numbers = "0123456789"
+      let passwordPicker = ""
+      let finalPassword = ""
+      
     event.preventDefault()
+
     const formData = new FormData(form)
     const formDataObj = Object.fromEntries(formData.entries())
-
-    const lowercaseLetters = "abcdefghijklmnopqrstuvwxyz"
-    const uppercaseLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-    const symbols = "!@#$%^&*()-+=_[]{}|;:,./"
-    const numbers = "0123456789"
-    let passwordPicker = ""
-    let finalPassword = ""
 
     if (
       formDataObj["lowercase"] != "on" &&
@@ -49,16 +51,15 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     const resultField = document.querySelector(".result-field")
-
     resultField.innerText = finalPassword
 
-    const span = document.querySelector(".result-field")
     const container = document.querySelector(".result")
     const mainContainer = document.querySelector("#main-container")
 
-    const fontSize = getComputedStyle(span).fontSize
+    // Code to calculate the number of lines finalPassword is wrapping to
+    const fontSize = getComputedStyle(resultField).fontSize
     const lineHeight = parseFloat(fontSize) * 1.2
-    const lines = span.clientHeight / lineHeight
+    const lines = resultField.clientHeight / lineHeight
     const linesRounded = Math.floor(lines)
 
     if (linesRounded === 1) {
