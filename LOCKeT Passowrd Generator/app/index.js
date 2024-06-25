@@ -70,5 +70,12 @@ document.addEventListener("DOMContentLoaded", function () {
       container.style.height = "90px"
       mainContainer.style.height = "500px"
     }
+
+    const clipboardIcon = document.querySelector(".clipboard-icon")
+    clipboardIcon.addEventListener("click", () => {
+        navigator.clipboard.writeText(finalPassword)
+        alert("Copied to clipboard")
+    })
+
   }
 })
